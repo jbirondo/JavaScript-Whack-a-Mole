@@ -37,6 +37,7 @@
   const scoreBoard = document.querySelector('.score');
   const moles = document.querySelectorAll('.mole');
   let lastHole
+
   function randTime(min, max){
     return Math.round(Math.random() * (max - min) + min)
   }
@@ -49,6 +50,10 @@
     return hole
   }
 
+  function peep(){
+    const time = randTime(200, 1000)
+    const hole = randomHole(holes)
+  }
 </script>
 </body>
 </html>
